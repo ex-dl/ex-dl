@@ -6,17 +6,10 @@
 wine-py2exe/
 py2exe.log
 *.kate-swp
-build/
-dist/
-MANIFEST
-README.txt
-youtube-dl.1
-youtube-dl.bash-completion
-youtube-dl.fish
-youtube_dl/extractor/lazy_extractors.py
-youtube-dl
-youtube-dl.exe
-youtube-dl.tar.gz
+ex-dl
+ex-dl.exe
+ex-dl.tar.gz
+ex-dl.zip
 .coverage
 cover/
 updates_key.pem
@@ -40,7 +33,7 @@ updates_key.pem
 *.swp
 test/local_parameters.json
 .tox
-youtube-dl.zsh
+ex-dl.zsh
 
 # IntelliJ related files
 .idea

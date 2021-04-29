@@ -107,7 +107,6 @@ from .postprocessor import (
     FFmpegPostProcessor,
     get_postprocessor,
 )
-from .version import __version__
 
 if compat_os_name == 'nt':
     import ctypes

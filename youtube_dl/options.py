@@ -17,8 +17,6 @@ from .utils import (
     preferredencoding,
     write_string,
 )
-from .version import __version__
-
 
 def _hide_login_info(opts):
     PRIVATE_OPTS = set(['-p', '--password', '-u', '--username', '--video-password', '--ap-password', '--ap-username'])
@@ -120,7 +118,6 @@ def parseOpts(overrideArguments=None):
     fmt.format_option_strings = _format_option_string
 
     kw = {
-        'version': __version__,
         'formatter': fmt,
         'usage': '%prog [OPTIONS] URL [URL...]',
         'conflict_handler': 'resolve',
@@ -133,14 +130,6 @@ def parseOpts(overrideArguments=None):
         '-h', '--help',
         action='help',
         help='Print this help text and exit')
-    general.add_option(
-        '--version',
-        action='version',
-        help='Print program version and exit')
-    general.add_option(
-        '-U', '--update',
-        action='store_true', dest='update_self',
-        help='Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)')
     general.add_option(
         '-i', '--ignore-errors',
         action='store_true', dest='ignoreerrors', default=False,
