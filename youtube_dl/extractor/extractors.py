@@ -794,6 +794,10 @@ from .nhk import (
     NhkVodIE,
     NhkVodProgramIE,
 )
+from .nhkradio import (
+    NhkRadioIE,
+    NhkRadioProgramIE
+)
 from .nhl import NHLIE
 from .nick import (
     NickIE,
